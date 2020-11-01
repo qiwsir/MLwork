@@ -1,4 +1,3 @@
-
 <center>
 # 关于Python中列表的综述 #
 </center>
