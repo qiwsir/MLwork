@@ -4,7 +4,7 @@
   方法一：生成器
 """
 
-def Fib_yield_while(max):
+def Fib_yield_while(max):   ## 函数名命名不规范
     a, b = 0, 1                #设置初始值
     while max > 0:
         a, b = b, a + b
