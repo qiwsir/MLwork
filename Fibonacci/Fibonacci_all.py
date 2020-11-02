@@ -38,7 +38,7 @@ if __name__ == "__main__":
 方法二：迭代器
 """
 
-class Fibonacci(object):       #定义类
+class Fibonacci(object):       #定义类   ## 这种定义类，是python2的习惯，在python3里面，不需要写object和括号，因为所有的类默认都是以object为基类
 
     def __init__(self, n):     #初始化
         self.n = n             #n为生成数列的项数
@@ -73,7 +73,7 @@ if __name__ == '__main__':
 方法三：矩阵
 """
 
-def Fibonacci_Matrix_tool(n):
+def Fibonacci_Matrix_tool(n):   # 函数名称不规范
     Matrix = np.matrix("1 1;1 0", dtype ='int64')        # 使用矩阵计算斐波那契数列，改变为64位整数类型
     return np.linalg.matrix_power(Matrix, n)            # 返回matrix类型,其中np.linalg.matrix_power（）为矩阵幂乘运算
 
@@ -105,7 +105,7 @@ num = []
 print("**********请输入要打印的斐波拉契数列项数n的值***********")
 n = input("enter:")     #输入想计算的项数n
 
-while b >= 1:
+while b >= 1:   ## 尽可能用for 循环
     try:                #设置异常，若输入非正整数退出
         n = int(n)
     except ValueError:
